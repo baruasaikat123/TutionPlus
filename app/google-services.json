@@ -1,0 +1,76 @@
+{
+  "project_info": {
+    "project_number": "919058145804",
+    "project_id": "tution-plus",
+    "storage_bucket": "tution-plus.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919058145804:android:741f124d38e3ecd5898429",
+        "android_client_info": {
+          "package_name": "com.example.tutionplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919058145804-emkrc3hnb6st6c4vqnf7qq7bpb25fmu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuxndr0smwSps86-dWMTZsrgRBIoKwYc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919058145804-emkrc3hnb6st6c4vqnf7qq7bpb25fmu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919058145804:android:d363c3161167dcf1898429",
+        "android_client_info": {
+          "package_name": "com.tutionplus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919058145804-qksej359kf4ff1jn0mmofq0qo9liqj6v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.tutionplus",
+            "certificate_hash": "93166262794d4a7cad4e3cd7c337de9bbb64238f"
+          }
+        },
+        {
+          "client_id": "919058145804-emkrc3hnb6st6c4vqnf7qq7bpb25fmu3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuxndr0smwSps86-dWMTZsrgRBIoKwYc0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919058145804-emkrc3hnb6st6c4vqnf7qq7bpb25fmu3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

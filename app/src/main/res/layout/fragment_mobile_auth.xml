@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/enter_mobile_frag"
+    tools:context=".Fragments.MobileAuth">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:id="@+id/enter_mobile_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Mobile Number"
+            android:fontFamily="@font/lora_italic"
+            android:textColor="@color/icon_color"
+            android:textSize="18dp" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/enter_mobile_no_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_phone"
+            app:startIconTint="@color/app_main"
+            app:boxStrokeColor="@color/app_main"
+            android:layout_marginTop="15dp"
+            android:hint="Phone"
+            app:errorEnabled="true"
+            app:helperText="Required*"
+            app:helperTextTextColor="@color/app_red"
+            android:textColorHint="@color/icon_color"
+            app:hintTextColor="@color/icon_color"
+            android:backgroundTint="@color/black"
+            app:prefixText="+91"
+            app:prefixTextColor="@color/icon_color"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/app_main"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/enter_mobile_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:maxLength="10"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/app_cursor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/get_otp_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Get OTP"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="100dp"
+            android:backgroundTint="@color/app_main"
+            />
+
+        <ProgressBar
+            android:id="@+id/get_otp_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+</FrameLayout>

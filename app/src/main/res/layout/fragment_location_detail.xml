@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.LocationDetail">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="25dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/address_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_address"
+            app:startIconTint="@color/app_main"
+            app:boxStrokeColor="@color/app_main"
+            android:hint="Address"
+            app:errorEnabled="true"
+            app:helperText="Required*"
+            app:helperTextTextColor="@color/app_red"
+            android:textColorHint="@color/icon_color"
+            app:hintTextColor="@color/icon_color"
+            android:backgroundTint="@color/black"
+            app:prefixTextColor="@color/icon_color"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/icon_color"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/teacher_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@drawable/app_cursor" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dropdown_state_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconTint="@color/icon_color"
+                app:boxStrokeColor="@color/app_main"
+                app:boxBackgroundColor="@color/white"
+                android:layout_marginTop="25dp"
+                android:background="@color/white"
+                app:hintTextColor="@color/icon_color"
+                android:textColorHint="@color/icon_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                >
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_state_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select State *"
+                    android:textColorHint="@color/icon_color"
+                    android:textSize="15dp"
+                    style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                    android:textColor="@color/icon_color"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </ScrollView>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/dropdown_city_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                app:endIconTint="@color/icon_color"
+                app:boxStrokeColor="@color/app_main"
+                app:boxBackgroundColor="@color/white"
+                android:background="@color/white"
+                app:hintTextColor="@color/icon_color"
+                android:textColorHint="@color/icon_color"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                >
+                <AutoCompleteTextView
+                    android:id="@+id/dropdown_city_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select City *"
+                    android:textSize="15dp"
+                    style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                    android:textColor="@color/icon_color"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:inputType="none"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/next_btn_location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_marginTop="25dp"
+            android:backgroundTint="#ff89dad0"
+            android:gravity="center_horizontal"
+            android:padding="12dp"
+            android:text="Next"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_next"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/white"
+            />
+
+    </LinearLayout>
+
+</FrameLayout>

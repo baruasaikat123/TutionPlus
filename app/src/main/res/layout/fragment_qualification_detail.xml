@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.QualificationDetail">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="25dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/lora_italic"
+                android:text="Are you a school or college teacher? *"
+                android:textColor="@color/icon_color"
+                android:textSize="17dp" />
+
+            <RadioGroup
+                android:id="@+id/teacher_profession_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/school_teacher_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/app_main"
+                    android:text="Yes I am a school teacher."
+                    android:textColor="@color/light_grey"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/college_professor_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/app_main"
+                    android:text="Yes I am a college professor."
+                    android:textColor="@color/light_grey"
+                    android:textSize="16dp" />
+
+                <RadioButton
+                    android:id="@+id/private_tutor_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/app_main"
+                    android:text="No I am a private tutor."
+                    android:textColor="@color/light_grey"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="5dp"
+                android:background="@color/app_light" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lora_italic"
+                android:text="Do you have any experience in teaching? *"
+                android:textColor="@color/icon_color"
+                android:textSize="17dp" />
+
+            <RadioGroup
+                android:id="@+id/teacher_experience_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+                <RadioButton
+                    android:id="@+id/yes_experience_radio_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/app_main"
+                    android:text="Yes."
+                    android:textColor="@color/light_grey"
+                    android:textSize="16dp" />
+
+
+                <RadioButton
+                    android:id="@+id/no_experience_radio_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/app_main"
+                    android:text="No I am a fresher."
+                    android:textColor="@color/light_grey"
+                    android:textSize="16dp" />
+
+            </RadioGroup>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/years_of_experience_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxStrokeColor="@color/app_main">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/years_of_experience"
+                        android:layout_width="60dp"
+                        android:layout_height="wrap_content"
+                        android:inputType="number"
+                        android:maxLength="2"
+                        android:textColor="@color/black"
+                        android:textCursorDrawable="@drawable/app_cursor"
+                        android:visibility="gone" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/years_of_experience_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/lora_italic"
+                    android:text="years of experience."
+                    android:layout_marginLeft="15dp"
+                    android:textColor="@color/light_grey"
+                    android:textSize="15dp"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <View
+                style="@style/Divider"
+                android:layout_marginTop="3dp"
+                android:background="@color/app_light" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lora_italic"
+                android:text="Select Your Highest Education Level: *"
+                android:textColor="@color/icon_color"
+                android:textSize="17dp" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/dropdown_item_degree_layout"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:background="@color/white"
+                    android:hint="Select"
+                    app:helperText="Required*"
+                    app:helperTextTextColor="@color/app_red"
+                    android:textColorHint="@color/light_grey"
+                    app:boxBackgroundColor="@color/white"
+                    app:boxStrokeColor="@color/app_main"
+                    app:endIconTint="@color/icon_color"
+                    app:hintTextColor="@color/light_grey">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/dropdown_item_degree"
+                        style="@style/Widget.AppCompat.Light.AutoCompleteTextView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:inputType="none"
+                        android:textColor="@color/icon_color"
+                        android:textSize="15dp" />
+
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </ScrollView>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/lora_italic"
+                android:text="Specify your subject specialization:"
+                android:textColor="@color/icon_color"
+                android:textSize="17dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/subject_specialize_layout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="5dp"
+                app:boxStrokeColor="@color/app_main"
+                app:helperText="(Optional)"
+                app:helperTextTextColor="@color/light_grey"
+                app:endIconMode="clear_text"
+                app:endIconTint="@color/icon_color">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/subject_specialize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="text"
+                    android:textCursorDrawable="@drawable/app_cursor"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/next_btn_qualification"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#ff89dad0"
+                android:gravity="center_horizontal"
+                android:padding="12dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                app:cornerRadius="100dp"
+                app:icon="@drawable/ic_next"
+                app:iconGravity="textEnd"
+                app:iconTint="@color/white" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>

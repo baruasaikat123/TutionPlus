@@ -1,0 +1,57 @@
+<resources>
+    <string name="app_name">TutionPlus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="signup_using_mobile"><u>Signup using Mobile</u></string>
+    <string name="resend_otp"><u>Resend otp</u></string>
+    <string name="Rs">\u20B9</string>
+    <string name="otp_sent_text">OTP has been sent \u2713</string>
+    <string name="otp_processing_text">    Please Wait...\n  Your OTP is on the way...</string>
+    <string name="enter_mobile_text"> We will send an OTP \non your Mobile number</string>
+    <string name="enter_mobile_tooltip_text">Enter Valid Mobile No. to receive OTP</string>
+    <string name="otp_processing_tooltip_text">Sending OTP...Wait for some time...</string>
+    <string name="otp_sent_tooltip_text"> "OTP has been sent"</string>
+    <string name="student">Student</string>
+    <string name="teacher">Teacher</string>
+    <string name="otp_send_error">Something went wrong.\n Please try again.</string>
+
+    <string-array name="degree">
+        <item>12th</item>
+        <item>Graduation</item>
+        <item>Masters</item>
+        <item>Phd</item>
+    </string-array>
+    <string-array name="pattern">
+        <item>CBSE</item>
+        <item>ICSE</item>
+        <item>Bengali Medium</item>
+        <item>local Medium</item>
+        <item>Any Medium</item>
+    </string-array>
+    <string-array name="type">
+        <item>Home Private</item>
+        <item>Batch System</item>
+        <item>Any Kind</item>
+    </string-array>
+    <string-array name="mode">
+        <item>Online</item>
+        <item>Offline</item>
+        <item>Any Kind</item>
+    </string-array>
+    <string-array name="subject">
+        <item>Mathematics</item>
+        <item>Physics</item>
+        <item>Chemistry</item>
+        <item>History</item>
+        <item>English</item>
+        <item>Bengali</item>
+        <item>Geography</item>
+        <item>Computer Sc.</item>
+        <item>Accounting</item>
+        <item>Biology</item>
+        <item>Zoology</item>
+        <item>Botany</item>
+        <item>Science</item>
+        <item>Arts</item>
+    </string-array>
+</resources>

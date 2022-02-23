@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:padding="10dp"
+    android:background="@color/white"
+    tools:context=".ProjectActivity.Dashboard">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Select a subject to search teacher"
+            android:textSize="17dp"
+            android:textColor="@color/black"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_marginTop="30dp"
+            android:layout_width="match_parent"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continue_search_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            app:icon="@drawable/ic_next"
+            app:iconTint="@color/white"
+            app:iconGravity="textEnd"
+            android:layout_gravity="center"
+            android:layout_marginBottom="50dp"
+            android:textAllCaps="false"
+            android:textSize="18dp"
+            android:padding="12dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            app:cornerRadius="100dp"
+            android:backgroundTint="@color/app_main"
+            />
+
+
+</LinearLayout>

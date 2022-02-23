@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/welcome_screen_frag"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.WelcomeScreen">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="I want to register as a"
+            android:textColor="@color/icon_color"
+            android:fontFamily="@font/lora_italic"
+            android:textSize="18dp"
+            android:layout_marginTop="50dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioGroup
+            android:id="@+id/radio_group_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView">
+
+            <RadioButton
+                android:id="@+id/radio_student"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_radio_button"
+                android:button="@color/white"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Student"
+                android:textColor="@drawable/radio_button_text_color"
+                android:textSize="18dp" />
+
+            <RadioButton
+                android:id="@+id/radio_teacher"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@drawable/custom_radio_button"
+                android:button="@color/white"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Teacher"
+
+                android:textColor="@drawable/radio_button_text_color"
+                android:textSize="18dp" />
+
+        </RadioGroup>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/continue_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:backgroundTint="@color/app_main"
+            android:gravity="center"
+            android:padding="12dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:cornerRadius="100dp"
+            app:icon="@drawable/ic_next"
+            app:iconGravity="textEnd"
+            app:iconTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.842"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radio_group_user"
+            app:layout_constraintVertical_bias="0.151" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        >-->
+
+<!--        <RadioGroup-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+<!--            <RadioButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/custom_radio_button"-->
+<!--                android:button="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Student"-->
+<!--                android:textColor="@drawable/radio_button_text_color"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <RadioButton-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@drawable/custom_radio_button"-->
+<!--                android:button="@color/white"-->
+<!--                android:gravity="center"-->
+<!--                android:padding="10dp"-->
+<!--                android:text="Student"-->
+<!--                android:textColor="@drawable/radio_button_text_color"-->
+<!--                android:textSize="20dp"-->
+<!--                android:textStyle="bold" />-->
+<!--        </RadioGroup>-->
+
+
+<!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+
+<!--        <com.google.android.material.button.MaterialButton-->
+<!--        android:id="@+id/continue_btn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:backgroundTint="@color/app_main"-->
+<!--        android:padding="12dp"-->
+<!--        android:text="Continue"-->
+<!--        android:textAllCaps="false"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:textSize="18dp"-->
+<!--        android:textStyle="bold"-->
+<!--        app:cornerRadius="100dp"-->
+<!--        app:icon="@drawable/ic_next"-->
+<!--        app:iconGravity="textEnd"-->
+<!--        app:iconTint="@color/white" />-->
+
+
+</FrameLayout>
