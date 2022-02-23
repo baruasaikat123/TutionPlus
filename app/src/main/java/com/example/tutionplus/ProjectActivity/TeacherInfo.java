@@ -10,7 +10,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
-import com.example.tutionplus.Fragments.BasicInfo;
+import com.example.tutionplus.Fragments.AdditionalInfo;
 import com.example.tutionplus.Fragments.LocationDetail;
 import com.example.tutionplus.Fragments.PreferenceDetail;
 import com.example.tutionplus.Fragments.QualificationDetail;
@@ -52,7 +52,7 @@ public class TeacherInfo extends AppCompatActivity {
         fragmentManager = getSupportFragmentManager();
 
         //Basic Info Fragment Load
-        new ReplaceFragment().replaceFragment(fragmentManager, new BasicInfo(), R.id.teacher_form_layout);
+        new ReplaceFragment().replaceFragment(fragmentManager, new AdditionalInfo(), R.id.teacher_form_layout);
 
         prev_step_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -79,7 +79,7 @@ public class TeacherInfo extends AppCompatActivity {
         form_error_text.setVisibility(View.GONE);
 
         if(step==1){
-            new ReplaceFragment().replaceFragment(fragmentManager, new BasicInfo(), R.id.teacher_form_layout);
+            new ReplaceFragment().replaceFragment(fragmentManager, new AdditionalInfo(), R.id.teacher_form_layout);
             form_info_text.setText("1.\tEnter your basic details: ");
         }
 
@@ -99,7 +99,8 @@ public class TeacherInfo extends AppCompatActivity {
         }
 
         else if(step == 5){
-
+            form_info_text.setText("4.\tAdditional info:");
+            new ReplaceFragment().replaceFragment(fragmentManager, new AdditionalInfo(), R.id.teacher_form_layout);
         }
     }
 
